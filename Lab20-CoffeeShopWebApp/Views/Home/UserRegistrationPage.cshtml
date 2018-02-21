@@ -1,9 +1,12 @@
-﻿<h1>User Registration</h1>
+﻿@*<h3>User Registration</h3>*@
 
 <div id="RegForm">
-    <form action="/Home/UserRegistrationPage" method="post">
-
-
+    <form action="/Home/RecieveUserInfo" method="post">
+        <br />
+            @* Post because giving info to server *@
+            @*form calls the method in controller called RecieveUserInfo*@
+            @*these inputs are the parameters to be used in RecieveUserInfo method*@
+        
         First Name <br>
         <input type="text" name="FirstName" /><br /><br />
         Last Name <br>
@@ -13,13 +16,13 @@
         Phone <br>
         <input type="tel" name="Phone" /><br /><br />
         Password <br>
-        <input type="password" name="Password" /><br /><br /><br>
-        Subscribe to email list?
-        <input type="checkbox" name="SubscribeToEmail" /><br /><br />
+        <input type="password" name="Password" /><br /><br />
+        @*Subscribe to email list?
+        <input type="checkbox" name="SubscribeToEmail" /><br /><br />*@
 
-        <input type="submit" value="Register" />
+        <input type="submit" name="Submit" value="Submit" />
 
 
     </form>
 </div>
-<h3>@ViewBag.ConfirmRegistration</h3> 
+ 

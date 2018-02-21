@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+//using System.Net.Mail.MailAddress;
 
 namespace Lab20_CoffeeShopWebApp.Controllers
 {
@@ -35,10 +36,48 @@ namespace Lab20_CoffeeShopWebApp.Controllers
         }
 
         public ActionResult ConfirmRegistration()
+            //need to call this method on the ConfirmRegistration page as a viewbag
+
         {
-            ViewBag.ConfirmationMessage = "Welcome {FirstName} to the Wonderful World of Wakandan Coffee!";
+           
 
             return View();
         }
+
+        public ActionResult RecieveUserInfo(string FirstName, string LastName, string Email, string Phone, string Password ) //bool SubscribeToEmail
+
+        //this is a METHOD called RecieveUserInfo with a parameter of the names from the input form. it does stuff and returns the result. 
+        //has the same name as the form that recieves the fields
+
+
+        {
+            ViewBag.FirstName = FirstName;
+            ViewBag.LastName = LastName;
+            ViewBag.Email = Email;
+            ViewBag.Phone = Phone;
+            ViewBag.Password = Password;
+            //ViewBag.SubscribeToEmail = SubscribeToEmail;
+
+            return View("ConfirmRegistration");
+        }
+       
+
+
+
+
+        // EMAIL VALIDATION pass the email address to the MailAddress.MailAddress(String) class constructor.
+        //public bool IsEmailValid(string emailaddress)
+        //        {
+        //            try
+        //            {
+        //                MailAddress m = new MailAddress(emailaddress);
+        //                return true;
+        //            }
+        //            catch (FormatException)
+        //            {
+        //                return false;
+        //            }
+        //        }
     }
+
 }

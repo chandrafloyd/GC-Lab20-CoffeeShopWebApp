@@ -1,6 +1,19 @@
 ﻿
+<h3>@ViewBag.ConfirmRegistration</h3>
 
-@{
-    ViewBag.ConfirmationMessage = "...";
+<h2>Welcome, @ViewBag.FirstName, to the Wonderful World of Wakandan Coffee!</h2>
 
-}
+<div>
+    <img src="~/Images/Wakanda.jpg" alt="Wakanda" style="width:10em;height:10em;">
+</div>
+
+<br />
+<h3>We have added you to our database as:</h3>
+<p>@ViewBag.FirstName @ViewBag.LastName</p>
+<p>@ViewBag.Email</p>
+<p>@ViewBag.Phone  </p>
+
+
+<h4>@ViewBag.ConfirmRegistration</h4>
+
+@*calls the view that displays the result in the format specified in the controller in ConfirmRegistration()*@
