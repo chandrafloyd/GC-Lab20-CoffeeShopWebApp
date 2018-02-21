@@ -1,0 +1,25 @@
+﻿<h1>User Registration</h1>
+
+<div id="RegForm">
+    <form action="/Home/UserRegistrationPage" method="post">
+
+
+        First Name <br>
+        <input type="text" name="FirstName" /><br /><br />
+        Last Name <br>
+        <input type="text" name="LastName"><br /><br />
+        Email <br>
+        <input type="email" name="Email" /><br /><br />
+        Phone <br>
+        <input type="tel" name="Phone" /><br /><br />
+        Password <br>
+        <input type="password" name="Password" /><br /><br /><br>
+        Subscribe to email list?
+        <input type="checkbox" name="SubscribeToEmail" /><br /><br />
+
+        <input type="submit" value="Register" />
+
+
+    </form>
+</div>
+<h3>@ViewBag.ConfirmRegistration</h3> 
