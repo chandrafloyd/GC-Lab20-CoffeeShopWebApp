@@ -36,7 +36,7 @@ namespace Lab20_CoffeeShopWebApp.Controllers
 
         public ActionResult ConfirmRegistration()
         {
-            ViewBag.Message = "Welcome {FirstName} to the Wonderful World of Wakandan Coffee!";
+            ViewBag.ConfirmationMessage = "Welcome {FirstName} to the Wonderful World of Wakandan Coffee!";
 
             return View();
         }
