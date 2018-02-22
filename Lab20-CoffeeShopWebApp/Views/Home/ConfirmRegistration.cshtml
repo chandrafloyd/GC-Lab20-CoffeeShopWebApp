@@ -3,17 +3,18 @@
 
 <h2>Welcome, @ViewBag.FirstName, to the Wonderful World of Wakandan Coffee!</h2>
 
-<div>
+<div style="float:left;margin-right:30px">
     <img src="~/Images/Wakanda.jpg" alt="Wakanda" style="width:10em;height:10em;">
 </div>
 
-<br />
-<h3>We have added you to our database as:</h3>
-<p>@ViewBag.FirstName @ViewBag.LastName</p>
-<p>@ViewBag.Email</p>
-<p>@ViewBag.Phone  </p>
+<div  >
+    <br />
+    <h3>We have added you to our database as:</h3>
+    <p>Name: @ViewBag.FirstName @ViewBag.LastName</p>
+    <p>Email: @ViewBag.Email</p>
+    <p>Phone: @ViewBag.Phone  </p>
 
 
-<h4>@ViewBag.ConfirmRegistration</h4>
-
+    <h4>@ViewBag.ConfirmRegistration</h4>
+</div>
 @*calls the view that displays the result in the format specified in the controller in ConfirmRegistration()*@

@@ -39,8 +39,6 @@ namespace Lab20_CoffeeShopWebApp.Controllers
             //need to call this method on the ConfirmRegistration page as a viewbag
 
         {
-           
-
             return View();
         }
 
@@ -48,6 +46,7 @@ namespace Lab20_CoffeeShopWebApp.Controllers
 
         //this is a METHOD called RecieveUserInfo with a parameter of the names from the input form. it does stuff and returns the result. 
         //has the same name as the form that recieves the fields
+        //have to ViewBag each item on the input fields in order for it to display
 
 
         {
@@ -66,11 +65,11 @@ namespace Lab20_CoffeeShopWebApp.Controllers
 
 
         // EMAIL VALIDATION pass the email address to the MailAddress.MailAddress(String) class constructor.
-        //public bool IsEmailValid(string emailaddress)
+        //public bool IsEmailValid(string Email)
         //        {
         //            try
         //            {
-        //                MailAddress m = new MailAddress(emailaddress);
+        //                MailAddress m = new MailAddress(Email);
         //                return true;
         //            }
         //            catch (FormatException)

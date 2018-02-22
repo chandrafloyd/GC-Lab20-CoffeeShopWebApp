@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab20-CoffeeShopWebApp", "L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC_CreditCheck", "..\MVC_CreditCheck\MVC_CreditCheck\MVC_CreditCheck.csproj", "{0D0CB0FD-96FB-4EB3-9DF0-0F56B1344312}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPNet_MVC", "..\ASPNet_MVC\ASPNet_MVC\ASPNet_MVC.csproj", "{F95E9191-AA02-49C4-8C54-C74AB68D9F17}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{0D0CB0FD-96FB-4EB3-9DF0-0F56B1344312}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D0CB0FD-96FB-4EB3-9DF0-0F56B1344312}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D0CB0FD-96FB-4EB3-9DF0-0F56B1344312}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F95E9191-AA02-49C4-8C54-C74AB68D9F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F95E9191-AA02-49C4-8C54-C74AB68D9F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F95E9191-AA02-49C4-8C54-C74AB68D9F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F95E9191-AA02-49C4-8C54-C74AB68D9F17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
