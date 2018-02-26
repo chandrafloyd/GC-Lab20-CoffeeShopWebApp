@@ -1,5 +1,7 @@
-﻿
-<h3>@ViewBag.ConfirmRegistration</h3>
+﻿@{
+    ViewBag.Title = "Confirm Registration";
+}
+
 
 <h2>Welcome, @ViewBag.FirstName, to the Wonderful World of Wakandan Coffee!</h2>
 
@@ -7,7 +9,7 @@
     <img src="~/Images/Wakanda.jpg" alt="Wakanda" style="width:10em;height:10em;">
 </div>
 
-<div  >
+<div>
     <br />
     <h3>We have added you to our database as:</h3>
     <p>Name: @ViewBag.FirstName @ViewBag.LastName</p>

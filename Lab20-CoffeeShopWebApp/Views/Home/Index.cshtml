@@ -1,13 +1,55 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-   <h2>Welcome to the Wakanda Coffee Shop!</h2> <br />
+<h2>Welcome to the Wakanda Coffee Shop!</h2> <br />
 
-    <div style="margin-bottom:10px">
-        <img src="~/Images/woman_drinking_coffee.jpg" alt="Coffee" style="width:20em;height:20em;">
-   
+<div id="welcomeimage" style="margin-bottom:10px">
+    <img src="~/Images/woman_drinking_coffee.jpg" alt="Coffee" style="width:20em;height:20em;">
 
-    <br />
-        <a href="/Home/UserRegistrationPage">Register New User</a>
-    <br />
- </div>
+</div>
+
+<div id="registernewuser" style="float:right">
+    <a href="/Home/UserRegistrationPage">Register New User</a>
+</div>
+
+
+@* search by item name *@
+<br /><br />
+<form action="/Home/SearchByItem" method="get">
+    <input type="text" name="ItemName" placeholder="Item Name">
+    <input type="submit" value="Search" />
+</form>
+
+<br />
+
+<table class="table">
+
+    <tr>
+        <th>Item</th>
+        <th>Description</th>
+        <th>Qty</th>
+        <th>Price</th>
+    </tr>
+
+
+
+    @* for loop to populate the list with each record based on the search field *@
+  
+    @foreach (var I in ViewBag.ItemList)
+    {
+        <tr>
+            <td> @I.ItemName</td>
+            <td>@I.ItemDescription</td>
+            <td>@I.Quantity</td>
+            <td>@I.Price</td>
+            <td><a href="/Home/SearchByItem?ItemName=@I.ItemName">Item</a></td>
+        </tr>
+    }
+
+
+</table>
+
+
+
+
+

@@ -1,0 +1,2 @@
+﻿// Seeing this comment implies that the code generation for file 'C:\Users\Owner\source\repos\Lab20-CoffeeShopWebApp\Lab20-CoffeeShopWebApp\Models\Lab22-CoffeeShopwithDatabase.edmx'
+// failed. See the ErrorList for details.

@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewBag.Title = "User Registration";
+        }
+
+<div id="RegForm">
+    <form action="/Home/UserRegistration" method="post">
+        <br />
+        @* Post because giving info to server *@
+        @*form calls the method in controller *@
+        @*these inputs are the parameters to be used in method*@
+
+   <br>
+        <input type="text" name="FirstName" placeholder="First Name" pattern="(^[a-zA-Z]{2,15}$)" /><br /><br />
+                <input type="text" name="LastName" placeholder="Last Name" pattern="(^[a-zA-Z]{2,15}$)" /><br /><br />
+       
+        <input type="email" name="Email" placeholder="kingtchalla@wakanda.com"/><br /><br /> @*validates itself because of the type email*@
+
+  
+       
+        <input type="tel" name="Phone" placeholder="3135551212" pattern="(^[0-9]{10,11}$)" /><br /><br />  @*validates itself for numbers but not correct length because of the type phone *@
+      
+       
+        <input type="password" name="Password" placeholder="Password" /><br /><br />
+       
+        Subscribe to email list?
+        <input type="checkbox" name="SubscribeToEmail" /><br /><br />
+
+        <input type="submit" name="Submit" value="Submit" />
+
+        <br />
+    </form>
+</div>
+ 
